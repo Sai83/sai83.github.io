@@ -3,12 +3,12 @@
     describe("fizzbuzztest", function() {
 
         it("test number multiple of 3 print fizz", function() {
-            var expected = fizzbuzz.getFizz(3);
+            var expected = fizzbuzz.getFizzBuzz(3);
             expect(expected).toBe("fizz");
         });
 
         it("test number multiple of 5 print fizz", function() {
-            var expected = fizzbuzz.getBuzz(5);
+            var expected = fizzbuzz.getFizzBuzz(5);
             expect(expected).toBe("buzz");
         });
 
@@ -19,9 +19,9 @@
         });
 
 
-        it("test number multiple of 2 and 4  print empty", function() {
+        it("test number multiple of 2 and 4  print number", function() {
             var expected = fizzbuzz.getFizzBuzz(8);
-            expect(expected).toBe("");
+            expect(expected).toBe(8);
         });
 
         it("test number multiple of 6  print fizz", function() {

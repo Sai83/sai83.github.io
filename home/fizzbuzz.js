@@ -20,9 +20,13 @@ else{
 
 };
 var getFizzBuzz = function(num){
-	return (getFizz(num) + getBuzz(num));
-
-};
+	if(getFizz(num) === "" && getBuzz(num) === ""){
+         return num;
+	}
+	else{
+		return (getFizz(num) + getBuzz(num));
+	}	
+	};
 
 return{
 	getFizz :getFizz,
