@@ -1,7 +1,7 @@
 //fizzbuzz.js
 var simpleTest = (function() {
     var aboutMe = function() {
-        var description = "Software Developer,geek and husband";
+        var description = "Software Developer,geek and husband. I can be reached at sai.praneeth@gmail.com";
         return description;
     };
 
