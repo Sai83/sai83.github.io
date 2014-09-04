@@ -1,4 +1,5 @@
-<html>
+<html ng-app="aboutMeApp">
+
 	<head>
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	</head>
@@ -6,7 +7,7 @@
 		<div class="container">
 			<h3> About Me</h3>
 			<div class="col-md-12">
-				<p class="strong" id="headerId"></p>
+				<p class="strong" id="headerId"></p>				
 			</div>
 		</div>
 		<div class="container">
@@ -44,10 +45,14 @@
 		</body>
 		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="Scripts/angular.js"></script>
+		<script type="text/javascript" src="home/app.js"></script>
+		<script type="text/javascript" src="home/fizzbuzz.js"></script>
 		<script type="text/javascript" src="home/aboutMe.js"></script>
 		<script type="text/javascript">
 		$(document).ready(function(){					   
 		   $('#headerId').text(simpleTest.aboutMe());
+		   simpleTest.fizzBuzz();
 		});
 		</script>
 	</html>
