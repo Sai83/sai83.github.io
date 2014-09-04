@@ -1,7 +1,10 @@
-
-describe("About Me",function(){
+(function(){
+describe("About Me",function(){	
+	 
 it("spec about me description",function(){
-
-expect(true).toBe(true);
+	var expected = simpleTest.aboutMe();
+expect(expected).toBe("Software Developer,geek and husband");
+// expect(true).toBe(true);
 });
 });
+})();

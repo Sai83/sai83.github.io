@@ -4,53 +4,50 @@
 <head>
   <title>Jasmine Spec Runner</title>
 
-  <link rel="shortcut icon" type="image/png" href="lib/jasmine-2.0.2/jasmine_favicon.png">
-  <link rel="stylesheet" type="text/css" href="lib/jasmine-2.0.2/jasmine.css">
-  
-  <!-- include spec files here... -->
-  <!-- <script type="text/javascript" src="spec/PlayerSpec.js"></script>
-   <script type="text/javascript" src="spec/SpecHelper.js"></script> -->
-
-  <!-- include source files here... -->
-  <!-- <script type="text/javascript" src="src/Player.js"></script>
-  <script type="text/javascript" src="src/Song.js"></script> -->
-
+  <link rel="shortcut icon" type="image/png" href="lib/jasmine-1.2.0/jasmine_favicon.png">
+  <link rel="stylesheet" type="text/css" href="lib/jasmine-1.2.0/jasmine.css">
 
 </head>
 
 <body>
+  <script type="text/javascript" src="lib/jasmine-1.2.0/jasmine.js"></script>
+  <script type="text/javascript" src="lib/jasmine-1.2.0/jasmine-html.js"></script>
 
-<script type="text/javascript" src="lib/jasmine-2.0.2/jasmine.js"></script>
-  <script type="text/javascript" src="lib/jasmine-2.0.2/jasmine-html.js"></script>
-  <script type="text/javascript" src="test/AboutMeSpec.js"></script>
- // <script type="text/javascript">
- //    (function() {
- //      var jasmineEnv = jasmine.getEnv();
- //      jasmineEnv.updateInterval = 1000;
+ <!-- include source files here... -->
+  <script type="text/javascript" src="home/aboutMe.js"></script>
 
- //      var htmlReporter = new jasmine.HtmlReporter();
 
- //      jasmineEnv.addReporter(htmlReporter);
+  <!-- include spec files here... -->
+<script type="text/javascript" src="test/AboutMeSpec.js"></script>
 
- //      jasmineEnv.specFilter = function(spec) {
- //        return htmlReporter.specFilter(spec);
- //      };
+  <script type="text/javascript">
+    (function() {
+      var jasmineEnv = jasmine.getEnv();
+      jasmineEnv.updateInterval = 1000;
 
- //      var currentWindowOnload = window.onload;
+      var htmlReporter = new jasmine.HtmlReporter();
 
- //      window.onload = function() {
- //        if (currentWindowOnload) {
- //          currentWindowOnload();
- //        }
- //        execJasmine();
- //      };
+      jasmineEnv.addReporter(htmlReporter);
 
- //      function execJasmine() {
- //        jasmineEnv.execute();
- //      }
+      jasmineEnv.specFilter = function(spec) {
+        return htmlReporter.specFilter(spec);
+      };
 
- //    })();
- //  </script>
+      var currentWindowOnload = window.onload;
+
+      window.onload = function() {
+        if (currentWindowOnload) {
+          currentWindowOnload();
+        }
+        execJasmine();
+      };
+
+      function execJasmine() {
+        jasmineEnv.execute();
+      }
+
+    })();
+  </script>
 
 
 </body>
